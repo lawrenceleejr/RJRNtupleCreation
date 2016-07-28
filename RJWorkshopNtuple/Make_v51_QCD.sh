@@ -1,0 +1,14 @@
+mkdir -p ../../../../QCD_v51
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361020.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361020.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361021.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361021.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361022.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361022.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361023.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361023.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361024.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361024.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361025.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361025.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361026.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361026.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361027.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361027.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361028.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361028.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361029.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361029.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361030.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361030.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361031.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361031.root
+./MakeZeroLeptonTree.x -ofile=../../../../QCD_v51/QCD361032.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v51/QCD361032.root

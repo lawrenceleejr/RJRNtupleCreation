@@ -1,0 +1,415 @@
+//////////////////////////////////////////////////////////
+// This class has been automatically generated on
+// Sun Sep 20 21:58:12 2015 by ROOT version 5.34/26
+// from TTree Top_SRAll/0-lepton small ntuple
+// found on file: Top.root
+//////////////////////////////////////////////////////////
+
+#ifndef ZeroLeptonBase_h
+#define ZeroLeptonBase_h
+
+#include <TROOT.h>
+#include <TChain.h>
+#include <TFile.h>
+
+// Header file for the classes stored in the TTree if any.
+#include <vector>
+
+// Fixed size dimensions of array or collections stored in the TTree if any.
+
+using namespace std;
+
+// UInt_t       NTVars_PRWHash;
+// UInt_t       NTVars_PRWHash_2;
+
+class ZeroLeptonBase {
+public :
+  TTree          *fChain;   //!pointer to the analyzed TTree or TChain
+  Int_t           fCurrent; //!current Tree number in a TChain
+
+  // Declaration of leaf types
+  UInt_t          NTVars_RunNumber;
+  UInt_t          NTVars_EventNumber;
+  UInt_t          NTVars_LumiBlockNumber;
+  UInt_t          NTVars_veto;
+  Float_t         NTVars_eventWeight;
+  Float_t         NTVars_pileupWeight;
+  Float_t         NTVars_pileupWeightUp;
+  Float_t         NTVars_pileupWeightDown;
+  //ULong64_t       NTVars_PRWHash;
+  UInt_t       NTVars_PRWHash;
+  UInt_t       NTVars_PRWHash_2;
+  Float_t         NTVars_genWeight;
+  Float_t         NTVars_ttbarWeightHT;
+  Float_t         NTVars_ttbarWeightPt2;
+  Float_t         NTVars_ttbarAvgPt;
+  Float_t         NTVars_WZweight;
+  UInt_t          NTVars_nJet;
+  UInt_t          NTVars_nFatJet;
+  Float_t         NTVars_met;
+  Float_t         NTVars_metPhi;
+  Float_t         NTVars_metTST;
+  Float_t         NTVars_metTSTPhi;
+  Float_t         NTVars_dPhi;
+  Float_t         NTVars_dPhiR;
+  Float_t         NTVars_meffInc;
+  Int_t           NTVars_hardproc;
+  Int_t           NTVars_nBJet;
+  Int_t           NTVars_nCJet;
+  Float_t         NTVars_normWeight;
+  Float_t         NTVars_normWeightUp;
+  Float_t         NTVars_normWeightDown;
+  UInt_t          NTVars_cleaning;
+  Float_t         NTVars_timing;
+  Float_t         NTVars_jet1Emf;
+  Float_t         NTVars_jet2Emf;
+  Float_t         NTVars_jet1Chf;
+  Float_t         NTVars_jet2Chf;
+  Int_t           NTVars_pdfId1;
+  Int_t           NTVars_pdfId2;
+  UInt_t          NTVars_tauN;
+  UInt_t          NTVars_tauJetBDTLoose;
+  UInt_t          NTVars_tauLooseN;
+  Float_t         NTVars_tauMt;
+  Float_t         NTVars_dPhiBadTile;
+  Bool_t          NTVars_isNCBEvent;
+  vector<float>   *jetPt;
+  vector<float>   *jetEta;
+  vector<float>   *jetPhi;
+  vector<float>   *jetM;
+  vector<float>   *jetBTag;
+  vector<int>     *jetFlav;
+  vector<float>   *jetTagU;
+  vector<float>   *jetTagB;
+  vector<float>   *jetTagC;
+  vector<float>   *jetFracSamplingMax;
+  vector<float>   *jetFracSamplingMaxIndex;
+  vector<float>   *FatJetPt;
+  vector<float>   *FatJetEta;
+  vector<float>   *FatJetPhi;
+  vector<float>   *FatJetM;
+  vector<float>   *D2_fat;
+  vector<bool>    *isWmedium_fat;
+  vector<float>   *tauPt;
+  vector<float>   *tauEta;
+  vector<float>   *tauPhi;
+  vector<float>   *tauLooseSF;
+  vector<float>   *tauLooseSFStatUp;
+  vector<float>   *tauLooseSFStatDown;
+  vector<float>   *tauLooseSFSystUp;
+  vector<float>   *tauLooseSFSystDown;
+  vector<float>   *systWeights;
+  vector<float>   *btagSystWeights;
+  UInt_t          NTReclusteringVars_NWcandidates;
+  UInt_t          NTReclusteringVars_test;
+  Int_t           NTReclusteringVars_nJetsRecl;
+  vector<float>   *ReclJetMass;
+  vector<float>   *ReclJetPt;
+  vector<float>   *ReclJetEta;
+  vector<float>   *ReclJetPhi;
+  vector<float>   *D2;
+  vector<bool>    *isWmedium;
+  vector<bool>    *isWtight;
+  vector<bool>    *isZmedium;
+  vector<bool>    *isZtight;
+  Float_t         NTExtraVars_mettrack;
+  Float_t         NTExtraVars_mettrack_phi;
+  Float_t         NTExtraVars_Ap;
+  Float_t         NTExtraVars_ZvvPt;
+  Float_t         NTExtraVars_ZvvEta;
+  Float_t         NTExtraVars_ZvvPhi;
+  Float_t         NTExtraVars_ZvvM;
+
+  // CRWT
+  Float_t         NTCRWTVars_lep1Pt;
+  Float_t         NTCRWTVars_lep1Eta;
+  Float_t         NTCRWTVars_lep1Phi;
+  Int_t           NTCRWTVars_lep1sign;
+  Int_t           NTCRWTVars_lep1Signal;
+  Float_t         NTCRWTVars_mt;
+  Float_t         NTCRWTVars_Wpt;
+  Float_t         NTCRWTVars_dphilMET;
+  Float_t         NTCRWTVars_Weta;
+  Float_t         NTCRWTVars_lep1ptvarcone20;
+  Float_t         NTCRWTVars_lep1ptvarcone30;
+  Float_t         NTCRWTVars_lep1topoetcone20;
+  Float_t         NTCRWTVars_fakeWeight;
+  Float_t         NTCRWTVars_fakeWeightUp;
+  Float_t         NTCRWTVars_fakeWeightDown;
+
+  // CRZ
+  Float_t         NTCRZVars_lep1Pt;
+  Float_t         NTCRZVars_lep2Pt;
+  Float_t         NTCRZVars_lep1Eta;
+  Float_t         NTCRZVars_lep2Eta;
+  Float_t         NTCRZVars_lep1Phi;
+  Float_t         NTCRZVars_lep2Phi;
+  Int_t           NTCRZVars_lep1sign;
+  Int_t           NTCRZVars_lep2sign;
+  Float_t         NTCRZVars_mll;
+  Float_t         NTCRZVars_Zpt;
+  Float_t         NTCRZVars_leptonWeight;
+  Float_t         NTCRZVars_leptonWeightUp;
+  Float_t         NTCRZVars_leptonWeightDown;
+  Float_t         NTCRZVars_triggerWeight;
+  Float_t         NTCRZVars_triggerWeightUp;
+  Float_t         NTCRZVars_triggerWeightDown;
+  Float_t         NTCRZVars_fakemet;
+  Float_t         NTCRZVars_fakemetPhi;
+  Float_t         NTCRZVars_lep1Iso;
+  Float_t         NTCRZVars_lep2Iso;
+  Float_t         NTCRZVars_lep1DRjet;
+  Float_t         NTCRZVars_lep2DRjet;
+  Float_t         NTCRZVars_lep1jetJVF;
+  Float_t         NTCRZVars_lep2jetJVF;
+
+  // CRY
+  Float_t         NTCRYVars_phPt;
+  Float_t         NTCRYVars_phEta;
+  Float_t         NTCRYVars_phPhi;
+  Float_t         NTCRYVars_origmet;
+  Float_t         NTCRYVars_origmetPhi;
+  Float_t         NTCRYVars_phTopoetcone20;
+  Float_t         NTCRYVars_phPtvarcone20;
+  Float_t         NTCRYVars_phPtcone20;
+  Float_t         NTCRYVars_phTopoetcone40;
+  Float_t         NTCRYVars_phPtvarcone40;
+  Float_t         NTCRYVars_phPtcone40;
+  Int_t           NTCRYVars_phTruthType;
+  Int_t           NTCRYVars_phTruthOrigin;
+  UInt_t          NTCRYVars_phSignal;
+
+  Float_t         test_met;
+  TBranch        *b_test_met;
+
+  // List of branches
+  TBranch        *b_NTVars;   //!
+  TBranch        *b_jetPt;   //!
+  TBranch        *b_jetEta;   //!
+  TBranch        *b_jetPhi;   //!
+  TBranch        *b_jetM;   //!
+  TBranch        *b_jetBTag;   //!
+  TBranch        *b_jetFlav;   //!
+  TBranch        *b_jetTagU;   //!
+  TBranch        *b_jetTagB;   //!
+  TBranch        *b_jetTagC;   //!
+  TBranch        *b_jetFracSamplingMax;   //!
+  TBranch        *b_jetFracSamplingMaxIndex;   //!
+  TBranch        *b_FatJetPt;   //!
+  TBranch        *b_FatJetEta;   //!
+  TBranch        *b_FatJetPhi;   //!
+  TBranch        *b_FatJetM;   //!
+  TBranch        *b_D2_fat;   //!
+  TBranch        *b_isWmedium_fat;   //!
+  TBranch        *b_tauPt;   //!
+  TBranch        *b_tauEta;   //!
+  TBranch        *b_tauPhi;   //!
+  TBranch        *b_tauLooseSF;   //!
+  TBranch        *b_tauLooseSFStatUp;   //!
+  TBranch        *b_tauLooseSFStatDown;   //!
+  TBranch        *b_tauLooseSFSystUp;   //!
+  TBranch        *b_tauLooseSFSystDown;   //!
+  TBranch        *b_systWeights;   //!
+  TBranch        *b_btagSystWeights;   //!
+  TBranch        *b_NTReclusteringVars;   //!
+  TBranch        *b_ReclJetMass;   //!
+  TBranch        *b_ReclJetPt;   //!
+  TBranch        *b_ReclJetEta;   //!
+  TBranch        *b_ReclJetPhi;   //!
+  TBranch        *b_D2;   //!
+  TBranch        *b_isWmedium;   //!
+  TBranch        *b_isWtight;   //!
+  TBranch        *b_isZmedium;   //!
+  TBranch        *b_isZtight;   //!
+  TBranch        *b_NTExtraVars;   //!
+
+  // CRWT
+  TBranch        *b_NTCRWTVars;   //!
+
+  // CRZ
+  TBranch        *b_NTCRZVars;   //!
+
+  // CRY
+  TBranch        *b_NTCRYVars;   //!
+
+  ZeroLeptonBase(TTree *tree=0);
+  virtual ~ZeroLeptonBase();
+  virtual Int_t    Cut(Long64_t entry);
+  virtual Int_t    GetEntry(Long64_t entry);
+  virtual Long64_t LoadTree(Long64_t entry);
+  virtual void     Init(TTree *tree);
+  virtual void     Loop(){}
+  virtual Bool_t   Notify();
+  virtual void     Show(Long64_t entry = -1);
+};
+
+#endif
+
+inline ZeroLeptonBase::ZeroLeptonBase(TTree *tree) : fChain(0) 
+{
+  // if parameter tree is not specified (or zero), connect the file
+  // used to generate this class and read the Tree.
+  if (tree == 0) {
+    TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("Top.root");
+    if (!f || !f->IsOpen()) {
+      f = new TFile("Top.root");
+    }
+    f->GetObject("Top_SRAll",tree);
+
+  }
+  Init(tree);
+}
+
+inline ZeroLeptonBase::~ZeroLeptonBase()
+{
+  if (!fChain) return;
+  delete fChain->GetCurrentFile();
+}
+
+inline Int_t ZeroLeptonBase::GetEntry(Long64_t entry)
+{
+  // Read contents of entry.
+  if (!fChain) return 0;
+  return fChain->GetEntry(entry);
+}
+inline Long64_t ZeroLeptonBase::LoadTree(Long64_t entry)
+{
+  // Set the environment to read one entry
+  if (!fChain) return -5;
+  Long64_t centry = fChain->LoadTree(entry);
+  if (centry < 0) return centry;
+  if (fChain->GetTreeNumber() != fCurrent) {
+    fCurrent = fChain->GetTreeNumber();
+    Notify();
+  }
+  return centry;
+}
+
+inline void ZeroLeptonBase::Init(TTree *tree)
+{
+  // The Init() function is called when the selector needs to initialize
+  // a new tree or chain. Typically here the branch addresses and branch
+  // pointers of the tree will be set.
+  // It is normally not necessary to make changes to the generated
+  // code, but the routine can be extended by the user if needed.
+  // Init() will be called many times when running on PROOF
+  // (once per file to be processed).
+
+  // Set object pointer
+  jetPt = 0;
+  jetEta = 0;
+  jetPhi = 0;
+  jetM = 0;
+  jetBTag = 0;
+  jetFlav = 0;
+  jetTagU = 0;
+  jetTagB = 0;
+  jetTagC = 0;
+  jetFracSamplingMax = 0;
+  jetFracSamplingMaxIndex = 0;
+  FatJetPt = 0;
+  FatJetEta = 0;
+  FatJetPhi = 0;
+  FatJetM = 0;
+  D2_fat = 0;
+  isWmedium_fat = 0;
+  tauPt = 0;
+  tauEta = 0;
+  tauPhi = 0;
+  tauLooseSF = 0;
+  tauLooseSFStatUp = 0;
+  tauLooseSFStatDown = 0;
+  tauLooseSFSystUp = 0;
+  tauLooseSFSystDown = 0;
+  systWeights = 0;
+  btagSystWeights = 0;
+  ReclJetMass = 0;
+  ReclJetPt = 0;
+  ReclJetEta = 0;
+  ReclJetPhi = 0;
+  D2 = 0;
+  isWmedium = 0;
+  isWtight = 0;
+  isZmedium = 0;
+  isZtight = 0;
+  
+  // Set branch addresses and branch pointers
+  if (!tree) return;
+  fChain = tree;
+  fCurrent = -1;
+  fChain->SetMakeClass(1);
+
+  fChain->SetBranchAddress("NTVars", &NTVars_RunNumber, &b_NTVars);
+  fChain->SetBranchAddress("jetPt", &jetPt, &b_jetPt);
+  fChain->SetBranchAddress("jetEta", &jetEta, &b_jetEta);
+  fChain->SetBranchAddress("jetPhi", &jetPhi, &b_jetPhi);
+  fChain->SetBranchAddress("jetM", &jetM, &b_jetM);
+  fChain->SetBranchAddress("jetBTag", &jetBTag, &b_jetBTag);
+  fChain->SetBranchAddress("jetFlav", &jetFlav, &b_jetFlav);
+  fChain->SetBranchAddress("jetTagU", &jetTagU, &b_jetTagU);
+  fChain->SetBranchAddress("jetTagB", &jetTagB, &b_jetTagB);
+  fChain->SetBranchAddress("jetTagC", &jetTagC, &b_jetTagC);
+  fChain->SetBranchAddress("jetFracSamplingMax", &jetFracSamplingMax, &b_jetFracSamplingMax);
+  fChain->SetBranchAddress("jetFracSamplingMaxIndex", &jetFracSamplingMaxIndex, &b_jetFracSamplingMaxIndex);
+  fChain->SetBranchAddress("FatJetPt", &FatJetPt, &b_FatJetPt);
+  fChain->SetBranchAddress("FatJetEta", &FatJetEta, &b_FatJetEta);
+  fChain->SetBranchAddress("FatJetPhi", &FatJetPhi, &b_FatJetPhi);
+  fChain->SetBranchAddress("FatJetM", &FatJetM, &b_FatJetM);
+  fChain->SetBranchAddress("D2_fat", &D2_fat, &b_D2_fat);
+  fChain->SetBranchAddress("isWmedium_fat", &isWmedium_fat, &b_isWmedium_fat);
+  fChain->SetBranchAddress("tauPt", &tauPt, &b_tauPt);
+  fChain->SetBranchAddress("tauEta", &tauEta, &b_tauEta);
+  fChain->SetBranchAddress("tauPhi", &tauPhi, &b_tauPhi);
+  fChain->SetBranchAddress("tauLooseSF", &tauLooseSF, &b_tauLooseSF);
+  fChain->SetBranchAddress("tauLooseSFStatUp", &tauLooseSFStatUp, &b_tauLooseSFStatUp);
+  fChain->SetBranchAddress("tauLooseSFStatDown", &tauLooseSFStatDown, &b_tauLooseSFStatDown);
+  fChain->SetBranchAddress("tauLooseSFSystUp", &tauLooseSFSystUp, &b_tauLooseSFSystUp);
+  fChain->SetBranchAddress("tauLooseSFSystDown", &tauLooseSFSystDown, &b_tauLooseSFSystDown);
+  fChain->SetBranchAddress("systWeights", &systWeights, &b_systWeights);
+  fChain->SetBranchAddress("btagSystWeights", &btagSystWeights, &b_btagSystWeights);
+  fChain->SetBranchAddress("NTReclusteringVars", &NTReclusteringVars_NWcandidates, &b_NTReclusteringVars);
+  fChain->SetBranchAddress("ReclJetMass", &ReclJetMass, &b_ReclJetMass);
+  fChain->SetBranchAddress("ReclJetPt", &ReclJetPt, &b_ReclJetPt);
+  fChain->SetBranchAddress("ReclJetEta", &ReclJetEta, &b_ReclJetEta);
+  fChain->SetBranchAddress("ReclJetPhi", &ReclJetPhi, &b_ReclJetPhi);
+  fChain->SetBranchAddress("D2", &D2, &b_D2);
+  fChain->SetBranchAddress("isWmedium", &isWmedium, &b_isWmedium);
+  fChain->SetBranchAddress("isWtight", &isWtight, &b_isWtight);
+  fChain->SetBranchAddress("isZmedium", &isZmedium, &b_isZmedium);
+  fChain->SetBranchAddress("isZtight", &isZtight, &b_isZtight);
+  fChain->SetBranchAddress("NTExtraVars", &NTExtraVars_mettrack, &b_NTExtraVars);
+  fChain->SetBranchAddress("NTCRWTVars", &NTCRWTVars_lep1Pt, &b_NTCRWTVars);
+  fChain->SetBranchAddress("NTCRZVars", &NTCRZVars_lep1Pt, &b_NTCRZVars);
+  fChain->SetBranchAddress("NTCRYVars", &NTCRYVars_phPt, &b_NTCRYVars);
+
+  // fChain->SetBranchAddress("NTVars.met", &test_met, &b_NTCRYVars);
+
+  Notify();
+}
+
+inline Bool_t ZeroLeptonBase::Notify()
+{
+  // The Notify() function is called when a new file is opened. This
+  // can be either for a new TTree in a TChain or when when a new TTree
+  // is started when using PROOF. It is normally not necessary to make changes
+  // to the generated code, but the routine can be extended by the
+  // user if needed. The return value is currently not used.
+
+  return kTRUE;
+}
+
+inline void ZeroLeptonBase::Show(Long64_t entry)
+{
+  // Print contents of entry.
+  // If entry is not specified, print current entry
+  if (!fChain) return;
+  fChain->Show(entry);
+}
+inline Int_t ZeroLeptonBase::Cut(Long64_t entry)
+{
+  // This function may be called from Loop.
+  // returns  1 if entry is accepted.
+  // returns -1 otherwise.
+  return 1;
+}
+

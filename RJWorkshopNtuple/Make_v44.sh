@@ -1,0 +1,12 @@
+mkdir -p ../../../../BKG_v44
+mkdir -p ../../../../SIG_v44
+mkdir -p ../../../../DATA_v44
+./MakeZeroLeptonTree.x -ofile=../../../../BKG_v44/Top.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v44/Top.root
+./MakeZeroLeptonTree.x -ofile=../../../../BKG_v44/DiBoson.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v44/DibosonMassiveCB.root
+./MakeZeroLeptonTree.x -ofile=../../../../BKG_v44/Wjets.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v44/WSherpaMassiveCB.root
+./MakeZeroLeptonTree.x -ofile=../../../../BKG_v44/Zjets.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v44/ZSherpaMassiveCB.root
+./MakeZeroLeptonTree.x -ofile=../../../../SIG_v44/SS_direct.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v44/SS_direct.root
+./MakeZeroLeptonTree.x -ofile=../../../../SIG_v44/GG_direct.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v44/GG_direct.root
+./MakeZeroLeptonTree.x -ofile=../../../../SIG_v44/GG_onestepCC.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v44/GG_onestepCC.root
+./MakeZeroLeptonTree.x -ofile=../../../../BKG_v44/QCD.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v44/QCD.root
+./MakeZeroLeptonTree.x -ofile=../../../../DATA_v44/Data.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v44/DataMain_new.root

@@ -1,0 +1,12 @@
+mkdir -p ../../../../ALL_v57_nosys
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/Data.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/DataMain.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/Diboson.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/DibosonMassiveCB.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/GG_direct.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/GG_direct.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/GG_direct_mc15b.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/GG_direct_mc15b.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/QCD.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/QCD.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/SM_GG_N2.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/SM_GG_N2.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/SS_direct.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/SS_direct.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/SS_direct_mc15b.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/SS_direct_mc15b.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/Top.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/Top.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/Zjets.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/ZMassiveCB.root
+./MakeZeroLeptonTree.x -ofile=../../../../ALL_v57_nosys/Wjets.root -ifile=/Users/crogan/Dropbox/SAMPLES/ZeroLeptonRun2/v57/WMassiveCB.root
